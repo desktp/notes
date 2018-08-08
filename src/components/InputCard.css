@@ -4,5 +4,8 @@
   background-color: #FFFF99 !important;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.input-note-container button {
+  margin-top: 10px;
 }

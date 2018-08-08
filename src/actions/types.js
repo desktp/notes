@@ -1,0 +1,3 @@
+export const ADD_NOTE = 'ADD_NOTE';
+export const INIT_NOTE_LISTENER = 'INIT_NOTE_LISTENER';
+export const NOTES_UPDATED = 'NOTES_UPDATED';

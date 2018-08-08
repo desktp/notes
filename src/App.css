@@ -1,7 +1,11 @@
 .content {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #CA925A;
+  background: #41295a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .input-container {
@@ -9,7 +13,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 200px;
-  padding: 20px 0;
+  padding: 20px 0 50px;
 }
 
 .notes-container {
@@ -18,6 +22,7 @@
   grid-column-gap: 60px;
   grid-row-gap: 20px;
   padding: 20px 60px;
+  overflow: auto;
 }
 
 .notes-container div {

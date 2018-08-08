@@ -1,9 +1,14 @@
 .note-card-container {
   padding: 10px;
   width: auto;
-  background-color: #FFFF99 !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   min-height: 120px;
+}
+
+.note-card-container h2,
+.note-card-container p,
+.note-card-container p a {
+  color: white !important;
 }

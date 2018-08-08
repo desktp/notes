@@ -2,10 +2,39 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #41295a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: #41295a;
+  background: -webkit-linear-gradient(to top, #2F0743, #41295a);
+  background: linear-gradient(to top, #2F0743, #41295a); */
+  /* background-image: url('/images/bg.png'); */
+  position: relative;
+}
 
+.content-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url('/images/bg.png');
+}
+
+.content-background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+}
+
+.content-background::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
 }
 
 .input-container {

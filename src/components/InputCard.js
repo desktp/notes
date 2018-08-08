@@ -31,7 +31,13 @@ class InputCard extends Component {
 
     return (
       <Paper className="input-note-container">
-        <TextField onChange={e => this.handleInputChange('title', e)} onBlur={this.onBlur} value={this.state.title} placeholder="Add note..." onFocus={this.expandCard} />
+        <TextField
+          onChange={e => this.handleInputChange('title', e)}
+          onBlur={this.onBlur}
+          value={this.state.title}
+          placeholder="Add note..."
+          onFocus={this.expandCard}
+        />
         {
           expanded && 
             <React.Fragment>

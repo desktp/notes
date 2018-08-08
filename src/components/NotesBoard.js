@@ -30,6 +30,7 @@ class NotesBoard extends Component {
         <div className="notes-container">
           {this.renderNotes()}
         </div>
+        <div className="content-background" />
       </div>
     );
   }

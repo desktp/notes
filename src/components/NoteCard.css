@@ -1,0 +1,8 @@
+.note-card-container {
+  padding: 10px;
+  width: auto;
+  background-color: #FFFF99 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

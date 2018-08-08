@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #CA925A;
+}
+
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 200px;
+  padding: 20px 0;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+  padding: 20px 60px;
+}
+
+.notes-container div {
+  max-width: 400px;
+}

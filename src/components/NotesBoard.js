@@ -15,7 +15,7 @@ class NotesBoard extends Component {
 
   renderNotes() {
     const { notes, deleteNote } = this.props;
-    return Object.keys(notes).map(key => <NoteCard key={key} note={notes[key]} deleteNote={deleteNote} />);
+    return notes.map(note => <NoteCard key={note.key} note={note} deleteNote={deleteNote} />);
   }
 
   render() {

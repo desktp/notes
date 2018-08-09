@@ -11,6 +11,7 @@
 }
 
 .input-note-container input,
+.input-note-container button,
 .input-note-container textarea {
   color: white !important;
 }

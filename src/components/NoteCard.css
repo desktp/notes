@@ -1,5 +1,6 @@
 .note-card-container {
   padding: 10px;
+  padding-right: 36px;
   width: auto;
   display: flex;
   flex-direction: column;

@@ -43,7 +43,7 @@
 
 .notes-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 60px;
   grid-row-gap: 20px;
   padding: 20px 60px;
@@ -51,6 +51,23 @@
 }
 
 .notes-container div {
-  max-width: 400px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .notes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .notes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .notes-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

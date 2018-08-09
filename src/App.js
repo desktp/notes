@@ -24,6 +24,7 @@ class App extends Component {
       NotesReducer,
       applyMiddleware(thunk)
     );
+  }
 
   render() {
     return (

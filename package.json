@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://desktp.github.io/notes-board",
+  "homepage": "http://desktp.github.io/notes",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }

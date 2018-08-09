@@ -20,16 +20,10 @@ class App extends Component {
       firebase.initializeApp({ apiKey, authDomain, databaseURL, projectId, storageBucket, messagingSenderId });
     }
 
-    // Note: this API requires redux@>=3.1.0
     this.store = createStore(
       NotesReducer,
       applyMiddleware(thunk)
     );
-  }
-
-  componentDidMount() {
-
-  }
 
   render() {
     return (

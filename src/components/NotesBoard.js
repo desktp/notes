@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import firebase from 'firebase';
-import { Provider, connect } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { connect } from 'react-redux';
 
 import InputCard from './InputCard';
 import NoteCard from './NoteCard';
 
 import addNote from '../actions/addNote';
+import deleteNote from '../actions/deleteNote';
 import initNoteListener from '../actions/initNoteListener';
 
 class NotesBoard extends Component {
@@ -16,9 +14,8 @@ class NotesBoard extends Component {
   }
 
   renderNotes() {
-    const { notes } = this.props;
-
-    return notes.map(note => <NoteCard key={note.key} note={note} />);
+    const { notes, deleteNote } = this.props;
+    return Object.keys(notes).map(key => <NoteCard key={key} note={notes[key]} deleteNote={deleteNote} />);
   }
 
   render() {
@@ -40,6 +37,6 @@ const mapStateToProps = ({ notes }) => {
   return { notes };
 };
 
-const mapDispatchToProps = { addNote, initNoteListener };
+const mapDispatchToProps = { addNote, deleteNote, initNoteListener };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NotesBoard);

@@ -12,6 +12,14 @@ export default (state = INITIAL_STATE, { type, payload }) => {
         ...state,
         notes: [payload, ...state.notes]
       }
+    case types.NOTE_DELETED:
+     const { notes } = state;
+     const elementToRemove = notes.find(n => n.key === payload.key);
+     notes.splice(notes.indexOf(elementToRemove), 1);
+      return {
+        ...state,
+        notes: [...notes],
+      }
     default: return state;
   }
 };

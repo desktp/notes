@@ -40,12 +40,12 @@ class InputCard extends Component {
         />
         {
           expanded && 
-            <React.Fragment>
+            <Fragment>
               <TextField onChange={e => this.handleInputChange('text', e)} onBlur={this.onBlur} value={this.state.field} multiline rows={3} />
               <Button onClick={() => this.submitNote()}>
                 Submit
               </Button>
-            </React.Fragment>
+            </Fragment>
         }
       </Paper>
 

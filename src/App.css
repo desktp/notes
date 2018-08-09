@@ -2,10 +2,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: #41295a;
-  background: -webkit-linear-gradient(to top, #2F0743, #41295a);
-  background: linear-gradient(to top, #2F0743, #41295a); */
-  /* background-image: url('/images/bg.png'); */
   position: relative;
 }
 

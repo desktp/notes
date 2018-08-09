@@ -12,7 +12,7 @@
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-image: url('/images/bg.png');
+  background-image: url('https://i.imgur.com/Xro5AuL.png');
 }
 
 .content-background::before {

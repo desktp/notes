@@ -13,7 +13,7 @@ function getRandomInt(max) {
 
 const availableColors = ['#D05B41', '#332640', '#B0351A', '#584D62', '#F14823'];
 
-const NoteCard = ({ note: { title, text, key }, deleteNote }) => (
+const NoteCard = ({ note: { title, text = "", key }, deleteNote }) => (
   <Paper className="note-card-container" style={{ backgroundColor: availableColors[getRandomInt(availableColors.length)] }} elevation={12}>
     <Typography variant="title" gutterBottom>{title}</Typography>
     <Typography dangerouslySetInnerHTML={{ __html: linkifyHtml(text, { ignoreTags: ['script'] }) }}></Typography>
